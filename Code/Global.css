@@ -1,0 +1,359 @@
+h1 {text-align: center;}
+h3 {text-align: left;}
+
+body 
+{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Work Sans';
+}
+
+form 
+{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+@media only screen and (max-width: 400px) 
+{
+    .LogoImg 
+{
+    border-radius: 5%;
+    height: 24vh;
+    width: 44vw;
+}
+}
+@media only screen and (min-width: 401px) 
+{
+    .LogoImg 
+{
+    border-radius: 5%;
+    height: 25vh;
+    width: 13vw;
+}
+}
+
+/* Generic */
+
+.TitleText 
+{
+    font-size: calc(36px + 1vw);
+    font-weight: 600;
+    color: #38AECC;
+    margin: 5;
+}
+
+.SubtitleText 
+{
+    font-size: calc(25px + 1vw);
+    font-weight: 500;
+    color: #38AECC;
+    margin: 10;
+}
+
+.SubText 
+{
+    font-size: calc(10px + 1vw);
+    font-weight: 400;
+    color: #e0eff2;
+    margin-bottom: 1vh;
+    align-items: center;
+}
+
+.Header
+{
+    height: 20vh; 
+    width: 100vw; 
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+    flex-direction: row;
+}
+
+.TextInput 
+{
+    width: 100%;
+    height: 5vh;
+    padding: 1vh;
+    font-size: 1em;
+    border-radius: 8px;
+    border: 1px solid #101828;
+    margin-bottom: 2vh;
+    background-color: #e0eff2;
+}
+
+.InputButton
+{
+    display: flex;
+    align-self: center;
+    width: 65%;
+    height: 65%;
+    border-radius: 8px;
+}
+
+.BackgroundImg
+{
+    background-image: url("Images/Background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    justify-content: flex-start;
+}
+
+/* Menu Page */
+
+.MenuTiles
+{
+    height: 21vh;
+    width: 37vw;
+    border-radius: 16px;
+    align-items: center;
+    font-family: Ubuntu;
+    font-size: 30px;
+    background-color: #e0eff2; 
+    border-color: #e0eff2; 
+    color: #38AECC;
+}
+.MenuTiles:hover
+{
+    opacity: 0.75; 
+    color: #e0eff2;
+    background-color: #38AECC;
+    border-color: #38AECC; 
+}
+.MenuTiles:active
+{
+    opacity: 0.5; 
+}
+
+.SettingsBtn
+{
+    height: 10vh; 
+    width: 18vw; 
+    background-color: #e0eff2; 
+    border-color: #e0eff2; 
+    color: #38AECC; 
+    margin-top: 2.5vh; 
+    margin-bottom: -12vh; 
+    border-radius: 16px; 
+    font-size: 25px;
+}
+.ConnectionBtn:hover
+{
+    opacity: 0.75;
+}
+
+/* Lighting */
+
+.LightingBtn
+{
+    height: 9vh;
+    width: 56vw;
+    font-size: 30px;
+    border-radius: 8px;
+    margin-top: 2.5vh; 
+    font-family: 'Work Sans';
+    background-color: #e0eff2;
+    border-color: #e0eff2;
+    color: #101828;
+}
+.LightingBtn:hover
+{
+    opacity: 0.75; 
+    color: #e0eff2;
+    background-color: #38AECC;
+    border-color: #38AECC; 
+}
+.LightingBtn:active
+{
+    opacity: 0.5; 
+}
+
+.RoomText
+{
+    width: 55%;
+    margin-left: 10%;
+}
+
+.buttonHolder
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay 
+{
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2; 
+    cursor: pointer; 
+}
+.text
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+.ToggleHolder
+{
+    width: 80vw;
+    margin-bottom: 1vh;
+    margin-top: 1vh;
+    margin-left: 5vw;
+    text-align: center;
+    justify-content: flex-start;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+/* Temperature */
+
+.TemperatureRow
+{
+    text-align: start;
+    justify-content: flex-start;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.TempControls
+{
+    width: 15vw;
+    height: 5vh;
+    background-color: transparent;
+    border: transparent;
+    color: #e0eff2;
+    margin-top: 4.5vh;
+    font-size:24px;
+}
+
+/* Routines */
+
+.RoutineHolder
+{
+    width: 80vw;
+    margin-bottom: 0.5vh;
+    text-align: start;
+    justify-content: flex-start;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.RoutineBtn
+{
+    margin-left: 2vw; 
+    margin-top: 0.8vh; 
+    height: 6vh; 
+    width: 10vw;
+}
+
+.toggle-container 
+{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 10px;
+    font-family: 'Work Sans';
+}
+.toggle-switch 
+{
+    position: relative;
+    display: inline-block;
+    width: 55px;
+    height: 30px;
+}
+.toggle-switch input 
+{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider 
+{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 30px;
+}
+
+.slider::before 
+{
+    position: absolute;
+    content: "";
+    height: 24px;
+    width: 24px;
+    left: 3px;
+    bottom: 3px;
+    background-color: #e0eff2;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider 
+{
+    background-color: #38AECC;
+}
+
+input:checked + .slider::before 
+{
+    transform: translateX(25px);
+}
+
+.RoutineAlign
+{
+    width: 55%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 10vw;
+}
+
+.addTab
+{
+    height: 7vh;
+    display: flex;
+    flex-direction: flex-start;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/* User History */
+.suggestionContainer
+{
+    width: 80vw;
+    margin-bottom: 0.5vh;
+    text-align: start;
+    justify-content: flex-start;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
