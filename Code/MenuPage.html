@@ -6,39 +6,39 @@
         <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
 
-    <body>
+    <body style="background-color: #101828;">
         <h1 class="SubtitleText" style="margin-bottom: 10vh; margin-top: 8vh;font-size: 40px;">Menu</h1>
         <div class = "buttonHolder" style="margin-top: 8vh">
-            <input class = "MenuTiles" style="margin-right: 2.5vw;" type="button" value="Timers" onclick="gotoTimers()">
+            <input class = "MenuTiles" style="margin-right: 2.5vw;" type="image" src="Images/timersIcon.png", value="Timers", onclick="gotoTimers(), onmouseenter;">
             <input class = "MenuTiles" style="margin-left: 2.5vw;" type="button" value="Calendar" onclick="gotoCalendar()">
         </div>
         <div class = "buttonHolder">
             <input class = "MenuTiles" style="margin-right: 2.5vw; margin-top: 2.5vh;" type="button" value="Routines" onclick="gotoRoutines()">
             <input class = "MenuTiles" style="margin-left: 2.5vw; margin-top: 2.5vh;" type="button" value="Cosmetics Shop" onclick="gotoCosmetics()">
         </div>
-        <input class="SettingsBtn" type="image" src="Images/SettingsBtn.png" onclick="gotoSettings();">
+        <input class="SettingsBtn" type="image" src="Images/settingsIcon.png" onclick="gotoSettings();">
     </body>
 </html>
 
 <script>
     function gotoTimers() 
-        {
-               window.location.href = "Lighting.html";
-        }
-        function gotoCalendar() 
-        {
-               window.location.href = "Temp.html";
-        }
-        function gotoRoutines() 
-        {
-               window.location.href = "Routines.html";
-        }
-        function gotoCosmetics() 
-        {
-               window.location.href = "Usage.html";
-        }
-        function gotoSettings() 
-        {
-               window.location.href = "Connections.html";
-        }
+    {
+        window.location.href = "Lighting.html";
+    }
+    function gotoCalendar() 
+    {
+        window.location.href = "Calendar.html";
+    }
+    function gotoRoutines() 
+    {
+        window.location.href = "Routines.html";
+    }
+    function gotoCosmetics() 
+    {
+        window.location.href = "Usage.html";
+    }
+    function gotoSettings() 
+    {
+        window.location.href = "Connections.html";
+    }
 </script>

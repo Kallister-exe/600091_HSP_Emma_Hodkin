@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <title>Routines</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Global.css">
+        <link href="Return.js">
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+
+    <body  style="background-color: #101828;">
+        <div class="Header">
+            <input type="image" src="Images/backBtn.png" style="margin-left: 2vw; height: 8vh; width: 14vw; margin-top: 1vh;" onclick="Return()">
+            <h1 class="SubtitleText" style="margin-bottom: 10vh; font-size: 36px; margin-left: 14.2vw; margin-top: 10vh;">Calendar</h1>
+        </div>
+        <p style="font-family: Work Sans; font-size: 28px; color: #38AECC; margin-left: 7vw; height: 5vh; width: 50vw; text-align: left; margin-right: 43vw; margin-top: 10vh;"></p>
+        <div class="RoutineHolder" style="margin-top: 0.2vh;">
+            <p class="SubText RoutineAlign" style=" font-size: 25px; color: #E0EFF2;">Winter</p>
+            <div class="toggle-container">
+                <label class="toggle-switch">
+                    <input type="checkbox" id="toggleSwitch">
+                    <span class="slider"></span>
+                </label>
+            </div>
+            <input class="RoutineBtn" type="image" src="Images/settings-2_svgrepo.com.png">
+        </div>
+        <div class="RoutineHolder">
+            <p class="SubText RoutineAlign" style=" font-size: 25px; color: #E0EFF2;">Weekends</p>
+            <div class="toggle-container">
+                <label class="toggle-switch">
+                    <input type="checkbox" id="toggleSwitch">
+                    <span class="slider"></span>
+                </label>
+            </div>
+            <input class="RoutineBtn" type="image" src="Images/settings-2_svgrepo.com.png">
+        </div>
+
+        <div class="addTab" onclick="on()">
+            <p style="color: #38AECC; font-size: 25px; font-family: Ubuntu; margin-top: 0.8vh; margin-bottom: 0;">Add A Routine</p>
+            <input type="image" src="Images/Group 25.png" style="margin-left: 2vw; width: 10vw; height: 6vh;">
+        </div>
+
+        <p style="font-family: Ubuntu; font-size: 28px; color: #38AECC; margin-left: 5vw; height: 7vh; width: 50vw; text-align: left; margin-right: 43vw; margin-top: 4vh; margin-bottom: 0;">Recommended:</p>
+        <p style="font-family: Ubuntu; font-size: 10px; color: #38AECC; margin-left: 5vw; height: 7vh; width: 50vw; text-align: left; margin-right: 43vw; margin-top: -2vh; margin-bottom: 0;">Based on your usage</p>
+        <div class="RoutineHolder" style="margin-top: 0.2vh;">
+            <p class="SubText RoutineAlign" style=" font-size: 25px; color: #E0EFF2; margin-bottom: 2vh;">Eco 1</p>
+            <div class="toggle-container">
+                <label class="toggle-switch" style="margin-left: 2vw; margin-bottom: 2vh;">
+                    <input type="checkbox" id="toggleSwitch">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+        <div class="RoutineHolder">
+            <p class="SubText RoutineAlign" style=" font-size: 25px; color: #E0EFF2; margin-bottom: 2vh;">Summer</p>
+            <div class="toggle-container">
+                <label class="toggle-switch" style="margin-left: 2vw; margin-bottom: 2vh;">
+                    <input type="checkbox" id="toggleSwitch">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+
+        <div class="overlay" id="overlay">
+            <div class="text">
+                <div style="background-color: #0B1B00; border-radius: 20px; height: 40vh; width: 84vw; margin-top: 15vh;">
+                    <div class="ToggleHolder" style="margin-top: 2vh; margin-bottom: 0; padding-top: 5vh;">
+                        <p class="SubText RoutineAlign" style=" font-size: 25px; color: #E0EFF2;">Light</p>
+                        <div class="toggle-container">
+                            <label class="toggle-switch">
+                                <input type="checkbox" id="toggleSwitch">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="ToggleHolder" style="margin-top: 2vh; margin-bottom: 0;">
+                        <p class="SubText RoutineAlign" style=" font-size: 25px; color: #E0EFF2;">Temp</p>
+                        <div class="toggle-container">
+                            <label class="toggle-switch">
+                                <input type="checkbox" id="toggleSwitch">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="ToggleHolder" style="margin-top: 2vh; margin-bottom: 0;">
+                        <p class="SubText RoutineAlign" style=" font-size: 25px; color: #E0EFF2;">Room</p>
+                        <div class="toggle-container">
+                            <label class="toggle-switch">
+                                <input type="checkbox" id="toggleSwitch">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="ToggleHolder" style="margin-top: 2vh; margin-bottom: 0;">
+                        <p class="SubText RoutineAlign" style=" font-size: 25px; color: #E0EFF2;">Time</p>
+                        <div class="toggle-container">
+                            <label class="toggle-switch">
+                                <input type="checkbox" id="toggleSwitch">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <input style="background-color: #38AECC; border-color: #38AECC; color: #E0EFF2; border-radius: 8px; height: 6vh; width: 26vw; font-family: Ubuntu; font-size: 25px; justify-content: center; margin-top: 2vh; text-align: center; align-self: center; margin-left: 29vw; margin-right: 29vw;" type="button" value="Save" onclick="off()">
+                </div>
+            </div>
+        </div> 
+
+    </body>
+</html>
+
+<script src="Return.js"></script>
+<script src="popup.js"></script>

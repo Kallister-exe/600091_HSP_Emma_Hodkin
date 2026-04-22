@@ -1,0 +1,27 @@
+CREATE PROCEDURE AddRoutine
+(
+    @routineID AS VARCHAR (255),
+    @userID AS VARCHAR (255)
+)
+AS
+BEGIN
+BEGIN TRY
+BEGIN TRANSACTION
+INSERT INTO Routines
+(
+    routineID,
+    userID
+)
+VALUES
+(
+    @routineID,
+    @userID
+)
+COMMIT TRANSACTION;
+END TRY
+BEGIN CATCH
+PRINT 'Add routine Error'
+ROLLBACK TRANSACTION
+THROW
+END CATCH
+END;

@@ -114,30 +114,28 @@ form
 {
     height: 21vh;
     width: 37vw;
+    padding: 1vh, 1vw;
     border-radius: 16px;
     align-items: center;
-    font-family: Ubuntu;
+    font-family: "Work Sans";
     font-size: 30px;
-    background-color: #e0eff2; 
-    border-color: #e0eff2; 
-    color: #38AECC;
-}
-.MenuTiles:hover
-{
-    opacity: 0.75; 
-    color: #e0eff2;
-    background-color: #38AECC;
-    border-color: #38AECC; 
+    border-color: rgba(0, 0, 0, 0);
+    background-color: #e0eff2;
 }
 .MenuTiles:active
 {
-    opacity: 0.5; 
+    opacity: 0.75; 
+    color: #e0eff2;
+    background-image: linear-gradient(to bottom right, #00B7D9, #00B7D9, #00A6AE, #00988C, #00988C);
 }
 
 .SettingsBtn
 {
-    height: 10vh; 
-    width: 18vw; 
+    height: auto; 
+    max-height: 10vh;
+    width: 80%; 
+    max-width: 18vw;
+    padding: 1vh 1vw;
     background-color: #e0eff2; 
     border-color: #e0eff2; 
     color: #38AECC; 
@@ -145,6 +143,7 @@ form
     margin-bottom: -12vh; 
     border-radius: 16px; 
     font-size: 25px;
+    background-size: contain;
 }
 .ConnectionBtn:hover
 {
